@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "JetBrainsMono Nerd Font";
+  src: url("../assets/JetBrainsMonoNerdFont-Regular.ttf") format("truetype");
+  /* Add more src declarations for other formats if desired */
+}
+
+body {
+  background-color: black;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: regular;
+  background-color: #121414;
+  color: #d4d4d4;
+}
+
+.banner {
+  color: white;
+  font-family: "JetBrainsMono Nerd Font";
+  background-image: url("../assets/banner.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+a {
+  color: #569cd6;
+  text-decoration: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  font-family: "JetBrainsMono Nerd Font";
+  margin: 0;
+}
