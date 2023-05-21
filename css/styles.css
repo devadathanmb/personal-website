@@ -39,3 +39,7 @@ footer p {
   font-family: "JetBrainsMono Nerd Font";
   margin: 0;
 }
+
+li {
+  padding-bottom: 4px;
+}
