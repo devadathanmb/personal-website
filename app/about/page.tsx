@@ -7,31 +7,31 @@ import { VscTerminalTmux } from "react-icons/vsc";
 
 export default function About() {
   return (
-    <div className="flex pt-20 md:pt-20 flex-col justify-center bg-gradient-to-b from-gray-800 to-black">
+    <div className="flex pt-20 flex-col justify-center bg-gradient-to-b from-gray-800 to-black">
       <div className="max-w-screen-lg p-5 mx-auto">
         <div>
           <div className="pb-8">
-            <h1 className="text-4xl font-bold inline border-b-4 border-yellow-200">
+            <h1 className="text-4xl font-bold inline border-b-4 border-blue-300">
               Who am I?
             </h1>
           </div>
           <p>Well, good question!</p>
           <br />
           <p>
-            I'm Devadathan M B. A passionate software developer and Linux a
+            I&apos;m Devadathan M B. A passionate software developer and Linux a
             enthusiast. Currently pursuing my B.Tech degree at RIT Kottayam,
             Kerala, India.
           </p>
           <br />
           <p>
-            I'm an ardent supporter of the FOSS and free software movement, and
+            I&apos;m an ardent supporter of the FOSS and free software movement, and
             I have a deep affinity for Linux. I enjoy working with the
             command-line interface (CLI) and find joy in using CLI tools.
           </p>
           <br />
           <p>
             Backend development and cloud technologies also pique my interest.
-            I'm always eager to learn something new every day and continue to
+            I&apos;m always eager to learn something new every day and continue to
             expand my knowledge in the ever-evolving tech world.
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function About() {
         <br />
         <div>
           <div className="pb-8">
-            <h1 className="text-4xl font-bold inline border-b-4 border-yellow-200">
+            <h1 className="text-4xl font-bold inline border-b-4 border-blue-300">
               Tools I use
             </h1>
           </div>
@@ -79,7 +79,7 @@ export default function About() {
             </ul>
             <br />
             <p>
-              This isn't the complete list of course. Checkout my
+              This isn&apos;t the complete list of course. Checkout my
               <a href="https://github.com/devadathanmb/dotfiles.git">
                 dotfiles repo{" "}
               </a>
@@ -89,7 +89,7 @@ export default function About() {
         </div>
         <br />
         <div className="pb-8">
-          <h1 className="text-4xl font-bold inline border-b-4 border-yellow-200">
+          <h1 className="text-4xl font-bold inline border-b-4 border-blue-300">
             What are my hobbies?
           </h1>
           <div className="mt-9">
@@ -103,9 +103,9 @@ export default function About() {
             </p>
             <br/>
             <p>
-              Otherwise I'm probably playing chess (Yes <b>chess</b>. 
+              Otherwise I&apos;m probably playing chess (Yes <b>chess</b>. 
               <a href="https://www.chess.com/member/publicstaticvoid_sane">
-                Come on let's play a game!
+                Come on let&apos;s play a game!
               </a>
               ) or watching or reading some interesting content.
             </p>{" "}

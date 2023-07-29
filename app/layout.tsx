@@ -4,11 +4,11 @@ import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-import {jetbrains_mono} from "./fonts";
+import { jetbrains_mono } from "./fonts";
 
 export const metadata: Metadata = {
-  title: "Devadathan's website",
-  description: "This is my website",
+  title: "Devadathan&apos;s website",
+  description: "Devadathan&apos;s personal website",
 };
 
 export default function RootLayout({
@@ -18,8 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-
-
       <body className={`${jetbrains_mono.className} bg-slate-950 text-white`}>
         <Navbar />
         {children}
