@@ -7,8 +7,8 @@ import Footer from "./components/Footer";
 import { jetbrains_mono } from "./fonts";
 
 export const metadata: Metadata = {
-  title: "Devadathan&apos;s website",
-  description: "Devadathan&apos;s personal website",
+  title: "Devadathan M B",
+  description: "Devadathan's personal website",
 };
 
 export default function RootLayout({
