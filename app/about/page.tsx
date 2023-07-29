@@ -24,15 +24,15 @@ export default function About() {
           </p>
           <br />
           <p>
-            I&apos;m an ardent supporter of the FOSS and free software movement, and
-            I have a deep affinity for Linux. I enjoy working with the
+            I&apos;m an ardent supporter of the FOSS and free software movement,
+            and I have a deep affinity for Linux. I enjoy working with the
             command-line interface (CLI) and find joy in using CLI tools.
           </p>
           <br />
           <p>
             Backend development and cloud technologies also pique my interest.
-            I&apos;m always eager to learn something new every day and continue to
-            expand my knowledge in the ever-evolving tech world.
+            I&apos;m always eager to learn something new every day and continue
+            to expand my knowledge in the ever-evolving tech world.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function About() {
             </ul>
             <br />
             <p>
-              This isn&apos;t the complete list of course. Checkout my
+              This isn&apos;t the complete list of course. Checkout my{" "}
               <a href="https://github.com/devadathanmb/dotfiles.git">
                 dotfiles repo{" "}
               </a>
@@ -95,15 +95,15 @@ export default function About() {
           <div className="mt-9">
             <p>
               Well, most of the time I spend writing code, exploring software,
-              trying out different tools, writing scripts and yeah
+              trying out different tools, writing scripts and yeah{" "}
               <a href="https://www.reddit.com/r/unixporn/comments/3iy3wd/stupid_question_what_is_ricing/">
                 Ricing
-              </a>
+              </a>{" "}
               my desktop.
             </p>
-            <br/>
+            <br />
             <p>
-              Otherwise I&apos;m probably playing chess (Yes <b>chess</b>. 
+              Otherwise I&apos;m probably playing chess (Yes <b>chess</b>.{" "}
               <a href="https://www.chess.com/member/publicstaticvoid_sane">
                 Come on let&apos;s play a game!
               </a>
