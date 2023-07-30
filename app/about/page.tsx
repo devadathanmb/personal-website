@@ -2,12 +2,12 @@ import { GrArchlinux } from "react-icons/gr";
 import { SiNeovim } from "react-icons/si";
 import { FaLinux } from "react-icons/fa";
 import { BiSolidDroplet } from "react-icons/bi";
-import { RiFootprintLine } from "react-icons/ri";
+import { RiTerminalBoxLine } from "react-icons/ri";
 import { VscTerminalTmux } from "react-icons/vsc";
 
 export default function About() {
   return (
-    <div className="flex pt-20 flex-col justify-center bg-gradient-to-b from-gray-800 to-black">
+    <div className="thing flex pt-20 flex-col justify-center bg-gradient-to-t from-gray-950 via-gray-900 to-black">
       <div className="max-w-screen-lg p-5 mx-auto">
         <div>
           <div className="pb-8">
@@ -73,14 +73,17 @@ export default function About() {
               </li>
               <li className="flex items-center">
                 Terminal emulator : &nbsp;
-                <RiFootprintLine size={20} />
-                &nbsp;Alacritty
+                <RiTerminalBoxLine size={20} />
+                &nbsp;Foot terminal
               </li>
             </ul>
             <br />
             <p>
               This isn&apos;t the complete list of course. Checkout my{" "}
-              <a href="https://github.com/devadathanmb/dotfiles.git">
+              <a
+                className="underline"
+                href="https://github.com/devadathanmb/dotfiles.git"
+              >
                 dotfiles repo{" "}
               </a>
               to find what I daily drive.
@@ -96,7 +99,10 @@ export default function About() {
             <p>
               Well, most of the time I spend writing code, exploring software,
               trying out different tools, writing scripts and yeah{" "}
-              <a href="https://www.reddit.com/r/unixporn/comments/3iy3wd/stupid_question_what_is_ricing/">
+              <a
+                className="underline"
+                href="https://www.reddit.com/r/unixporn/comments/3iy3wd/stupid_question_what_is_ricing/"
+              >
                 Ricing
               </a>{" "}
               my desktop.
@@ -104,7 +110,10 @@ export default function About() {
             <br />
             <p>
               Otherwise I&apos;m probably playing chess (Yes <b>chess</b>.{" "}
-              <a href="https://www.chess.com/member/publicstaticvoid_sane">
+              <a
+                className="underline"
+                href="https://www.chess.com/member/publicstaticvoid_sane"
+              >
                 Come on let&apos;s play a game!
               </a>
               ) or watching or reading some interesting content.

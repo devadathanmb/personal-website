@@ -1,6 +1,5 @@
 import { BsGithub, BsLinkedin, BsDiscord, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { SiMatrix } from "react-icons/si";
 
 export default function Contact() {
   return (
@@ -21,8 +20,7 @@ export default function Contact() {
             <li className="flex items-center">
               Twitter (aka X) &nbsp;
               <BsTwitter size={20} />
-              &nbsp; :{" "}
-              <a href="https://twitter.com/devcodess">@devcodess</a>
+              &nbsp; : <a href="https://twitter.com/devcodess">@devcodess</a>
             </li>
             <li className="flex items-center">
               Discord &nbsp;
@@ -46,11 +44,6 @@ export default function Contact() {
                 @devadathanmb
               </a>
             </li>
-            {/* <li className="flex items-center"> */}
-            {/*   Matrix &nbsp; */}
-            {/*   <SiMatrix size={20} /> */}
-            {/*   &nbsp; : @devadathanmb:matrix.org */}
-            {/* </li> */}
           </ul>
           <br />
         </div>
@@ -64,7 +57,11 @@ export default function Contact() {
           <p className="py-5">Submit the form to get in touch with me</p>
         </div>
         <div className="flex">
-          <form action="" className="flex flex-col w-full md:w-1/2">
+          <form
+            action="https://getform.io/f/590d4d02-0375-4a86-93f3-fe0d897fed18"
+            method="POST"
+            className="flex flex-col w-full md:w-1/2"
+          >
             <input
               type="text"
               name="name"
@@ -73,13 +70,12 @@ export default function Contact() {
             />
             <input
               type="text"
-              name="name"
+              name="email"
               placeholder="Enter your email"
               className="my-4 p-2 bg-transparent border-2 rounded-md focus:outline-none"
             />
             <textarea
               name="message"
-              id=""
               rows={10}
               placeholder="Enter your message"
               className="my-4 p-2 bg-transparent border-2 rounded-md focus:outline-none"

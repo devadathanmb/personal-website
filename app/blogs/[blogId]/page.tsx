@@ -1,5 +1,6 @@
 import { getSortedPostsData, getPostData } from "@/lib/posts";
 import { notFound } from "next/navigation";
+import Date from "@/app/components/Date";
 
 export function generateStaticParams() {
   const posts = getSortedPostsData();
@@ -28,7 +29,9 @@ export default async function Blog({ params }: { params: { blogId: string } }) {
             {title}
           </h1>
         </div>
-        <p className="font-bold text-1xl mb-9">{date}</p>
+        <p className="font-bold text-1xl mb-9">
+          <Date dateString={date} />
+        </p>
         <article>
           <section
             className={`prose justify-center text-white ${proseOverrides}`}

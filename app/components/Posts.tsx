@@ -1,5 +1,6 @@
 import { getSortedPostsData } from "../../lib/posts";
 import Link from "next/link";
+import Date from "./Date";
 
 export default function Posts() {
   const posts = getSortedPostsData();
@@ -18,7 +19,9 @@ export default function Posts() {
               {post.title}
             </Link>
             <br />
-            <small>{post.date}</small>
+            <small>
+              <Date dateString={post.date} />
+            </small>
           </li>
         ))}
       </ul>

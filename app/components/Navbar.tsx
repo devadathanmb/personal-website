@@ -13,6 +13,7 @@ interface Link {
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
+  console.log(pathname);
   const links: Link[] = [
     {
       id: 1,
@@ -43,7 +44,9 @@ export default function Navbar() {
   return (
     <div className="flex bg-black px-4 justify-between items-center w-full h-16 fixed">
       <div>
-        <h1 className="text-2xl ml-2">devadathan.codes</h1>
+        <h1 className="text-2xl ml-2">
+          <Link href="/">devadathan.codes</Link>
+        </h1>
       </div>
       <ul className="hidden md:flex">
         {links.map((link) => (
@@ -51,7 +54,8 @@ export default function Navbar() {
             key={link.id}
             id={link.id.toString()}
             className={`px-4 cursor-pointer capitalize font-medium ${
-              pathname === link.path
+              pathname === link.path ||
+              (pathname.includes(link.path) && link.path.length > 1)
                 ? "text-white"
                 : "text-gray-500 hover:text-white"
             } hover:scale:-105 duration-200`}
@@ -74,7 +78,8 @@ export default function Navbar() {
               key={link.id}
               id={link.id.toString()}
               className={`px-4 cursor-pointer py-6 text-4xl capitalize font-medium ${
-                pathname === link.path
+                pathname === link.path ||
+                (pathname.includes(link.path) && link.path.length > 1)
                   ? "text-white"
                   : "text-gray-500 hover:text-white"
               } hover:scale:-105 duration-200`}
