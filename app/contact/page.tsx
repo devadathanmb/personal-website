@@ -6,7 +6,7 @@ export default function Contact() {
     <div className="w-full pt-20 bg-gradient-to-b from-black to-gray-800">
       <div className="p-5 max-w-screen-lg mx-auto">
         <div className="pb-8">
-          <h1 className="text-4xl font-bold inline border-b-4 border-blue-300">
+          <h1 className="leading-loose text-4xl font-bold inline border-b-4 border-blue-300">
             Connect with me
           </h1>
           <p className="py-5">Find my social links below</p>
@@ -51,7 +51,7 @@ export default function Contact() {
 
       <div className="flex p-5 max-w-screen-lg mx-auto flex-col justify-center">
         <div className="pb-8">
-          <h1 className="text-4xl font-bold inline border-b-4 border-blue-300">
+          <h1 className="leading-loose text-4xl font-bold inline border-b-4 border-blue-300">
             Contact me
           </h1>
           <p className="py-5">Submit the form to get in touch with me</p>

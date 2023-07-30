@@ -5,7 +5,7 @@ export default function Portfolio() {
     <div className="pt-20 min-h-screen bg-gradient-to-b from-gray-800 to-black">
       <div className="p-5 max-w-screen-lg mx-auto">
         <div className="pb-8">
-          <h1 className="text-4xl font-bold inline border-b-4 border-blue-300">
+          <h1 className="leading-loose text-4xl font-bold inline border-b-4 border-blue-300">
             Projects
           </h1>
           <div className="mt-10 p-5 grid md:grid-cols-2 gap-5">
@@ -17,7 +17,7 @@ export default function Portfolio() {
               >
                 <div className="h-full p-5 bg-gray-800">
                   <div>
-                    <h1 className="text-2xl">{project.name}</h1>
+                    <h1 className="leading-loose text-2xl">{project.name}</h1>
                     <p className="text-gray-200 pt-4">{project.description}</p>
                     <div className="mt-4">
                       {project.tags.map((tag) => (

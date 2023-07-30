@@ -22,7 +22,7 @@ export default async function Blog({ params }: { params: { blogId: string } }) {
     <div className="pt-20 bg-gradient-to-b min-h-screen from-black via-black to-gray-950">
       <div className="p-5 flex justify-center items-center flex-col">
         <div className="pb-8">
-          <h1 className="text-5xl font-bold inline border-b-4 border-blue-300">
+          <h1 className="text-5xl font-bold inline leading-loose border-b-4 border-blue-300">
             {title}
           </h1>
         </div>
@@ -31,7 +31,7 @@ export default async function Blog({ params }: { params: { blogId: string } }) {
         </p>
         <article>
           <section
-            className={`prose justify-center dark:prose-invert`}
+            className={`prose dark:prose-invert`}
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           ></section>
         </article>

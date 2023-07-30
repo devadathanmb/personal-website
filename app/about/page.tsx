@@ -11,7 +11,7 @@ export default function About() {
       <div className="max-w-screen-lg p-5 mx-auto">
         <div>
           <div className="pb-8">
-            <h1 className="text-4xl font-bold inline border-b-4 border-blue-300">
+            <h1 className="leading-loose text-4xl font-bold inline border-b-4 border-blue-300">
               Who am I?
             </h1>
           </div>
@@ -39,7 +39,7 @@ export default function About() {
         <br />
         <div>
           <div className="pb-8">
-            <h1 className="text-4xl font-bold inline border-b-4 border-blue-300">
+            <h1 className="leading-loose text-4xl font-bold inline border-b-4 border-blue-300">
               Tools I use
             </h1>
           </div>
@@ -92,7 +92,7 @@ export default function About() {
         </div>
         <br />
         <div className="pb-8">
-          <h1 className="text-4xl font-bold inline border-b-4 border-blue-300">
+          <h1 className="leading-loose text-4xl font-bold inline border-b-4 border-blue-300">
             What are my hobbies?
           </h1>
           <div className="mt-9">

@@ -6,7 +6,7 @@ export default function Posts() {
   const posts = getSortedPostsData();
   return (
     <div className="p-5 max-w-screen-lg mx-auto">
-      <h1 className="text-5xl font-bold inline border-b-4 border-blue-300">
+      <h1 className="leading-loose text-5xl font-bold inline border-b-4 border-blue-300">
         Blogs
       </h1>
       <ul className="mt-8 w-full">

@@ -33,38 +33,30 @@ Enough talking. Let's get straight into business.
 
 1. Open `/etc/systemd/system/getty.target.wants/getty@tty1.service` using your favorite text editor.
 
-```bash
+`bash
 sudo vim /etc/systemd/system/getty.target.wants/getty@tty1.service
-```
+`
 
 2. Find the line saying `[Service]`
 
 3. There you will see something like This
 
-```
-ExecStart=-/sbin/agetty -o '-p -- \\u' --noclear - $TERM
-```
+`ExecStart=-/sbin/agetty -o '-p -- \\u' --noclear - $TERM`
 
-```
-aggety : Program that manages the virtual terminal
--o : To set output options
--p : Issue prompting (/etc/issue)
---noclear : Don't clear terminal before displaying prompt
-$TERM : User's default terminal
-```
+`aggety : Program that manages the virtual terminal`
+`-o : To set output options`
+`-p : Issue prompting (/etc/issue)`
+`--noclear : Don't clear terminal before displaying prompt`
+`$TERM : User's default terminal`
 
 4. Comment the line and add this new line
 
-```
-ExecStart=-/sbin/agetty -i -a <username> %I $TERM
-```
+`ExecStart=-/sbin/agetty -i -a <username> %I $TERM`
 
 Where `<username>` will be your username (for eg: `ram`)
 
-```
-eg:
-ExecStart=-/sbin/agetty -i -a ram %I $TERM
-```
+`eg:
+ExecStart=-/sbin/agetty -i -a ram %I $TERM`
 
 5. Save the file and reboot. And thou shall enter no password fron now own.
 
