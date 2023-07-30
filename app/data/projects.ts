@@ -13,7 +13,14 @@ const projects: Project[] = [
     name: "RIT Attendance Bot",
     description:
       "A telegram bot to find attendance details from RITSoft easily.",
-    tags: ["Telegraf.Js", "JavaScript", "Axios"],
+    tags: [
+      "Telegraf.Js",
+      "Node.Js",
+      "Axios",
+      "FASTAPI",
+      "Python",
+      "BeautifulSoup",
+    ],
     githubLink: "https://github.com/devadathanmb/rit-attendance-bot",
     demoLink: "https://t.me/atttendancebot",
   },
@@ -22,7 +29,7 @@ const projects: Project[] = [
     name: "Diet Planner Application",
     description:
       "A diet planner application to generate customized diet plans based on the user's body measurements and goals by using linear programming",
-    tags: ["React", "JavaScript", "Flask-RESTful", "Python"],
+    tags: ["React.Js", "Python-PuLP", "Flask-RESTful", "Python"],
     githubLink: "https://github.com/devadathanmb/diet-planner-backend",
     demoLink: "https://dietplannerapp.online",
   },
@@ -48,7 +55,7 @@ const projects: Project[] = [
     name: "Entevim",
     description:
       "My curated neovim configs which can be used as an IDE layer on top of neovim.",
-    tags: ["Neovim", "Packer", "Lua"],
+    tags: ["Neovim", "Packer.nvim", "Lua"],
     githubLink: "https://github.com/devadathanmb/entevim",
   },
   {
