@@ -1,6 +1,6 @@
 ---
 title: "How to setup autologin in Linux (with systemd)"
-date: "29-07-2023"
+date: "2023-07-29"
 ---
 
 # Setting up autologin using getty service
