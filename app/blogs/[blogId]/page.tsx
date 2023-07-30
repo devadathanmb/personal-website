@@ -18,9 +18,6 @@ export default async function Blog({ params }: { params: { blogId: string } }) {
   }
 
   const { title, date, contentHtml } = await getPostData(blogId);
-  const proseOverrides =
-    "prose-headings:text-white prose-p:text-white  prose-p:text-white prose-strong:text-white";
-
   return (
     <div className="pt-20 bg-gradient-to-b min-h-screen from-black via-black to-gray-950">
       <div className="p-5 flex justify-center items-center flex-col">
@@ -34,7 +31,7 @@ export default async function Blog({ params }: { params: { blogId: string } }) {
         </p>
         <article>
           <section
-            className={`prose justify-center text-white ${proseOverrides}`}
+            className={`prose justify-center dark:prose-invert`}
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           ></section>
         </article>
