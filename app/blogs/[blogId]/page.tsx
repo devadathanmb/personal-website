@@ -31,7 +31,7 @@ export default async function Blog({ params }: { params: { blogId: string } }) {
         </p>
         <article>
           <section
-            className={`prose prose-code:whitespace-pre-line dark:prose-invert`}
+            className={`prose prose-code:whitespace-pre-line prose-pre:bg-gray-900 dark:prose-invert`}
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           ></section>
         </article>
