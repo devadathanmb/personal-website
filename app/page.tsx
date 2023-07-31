@@ -6,7 +6,7 @@ export default function Home() {
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center h-full px-5">
         <div className="flex flex-col justify-center h-full">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
-            Hello! I&apos;m Devadathan M B<span className="blink">|</span>
+            Hello! I&apos;m Devadathan M B<span className="blink hidden md:inline">|</span>
           </h1>
           <p className="text-gray-500 py-4">
             A passionate computer science student from India
