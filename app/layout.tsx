@@ -7,7 +7,7 @@ import { jetbrains_mono } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Devadathan M B",
-  description: "Devadathan's personal website",
+  description: "Personal website of Devadathan M B",
 };
 
 export default function RootLayout({
