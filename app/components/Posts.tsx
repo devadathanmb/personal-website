@@ -1,6 +1,8 @@
 import { getSortedPostsData } from "../../lib/posts";
 import Link from "next/link";
 import Date from "./Date";
+import { AiOutlineCalendar } from "react-icons/ai";
+
 
 export default function Posts() {
   const posts = getSortedPostsData();
@@ -19,7 +21,8 @@ export default function Posts() {
               {post.title}
             </Link>
             <br />
-            <small>
+            <small className="flex mt-1 items-center">
+              <AiOutlineCalendar className="mr-1" />
               <Date dateString={post.date} />
             </small>
           </li>

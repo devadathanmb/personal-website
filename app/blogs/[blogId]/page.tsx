@@ -1,6 +1,9 @@
 import { getSortedPostsData, getPostData } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Date from "@/app/components/Date";
+import Link from "next/link";
+import { IoIosArrowBack } from "react-icons/io";
+import { AiOutlineCalendar } from "react-icons/ai";
 
 export function generateStaticParams() {
   const posts = getSortedPostsData();
@@ -26,7 +29,8 @@ export default async function Blog({ params }: { params: { blogId: string } }) {
             {title}
           </h1>
         </div>
-        <p className="font-bold text-1xl mb-9">
+        <p className="font-bold flex items-center text-1xl mb-9">
+          <AiOutlineCalendar className="mr-2" />
           <Date dateString={date} />
         </p>
         <article>
@@ -35,6 +39,10 @@ export default async function Blog({ params }: { params: { blogId: string } }) {
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           ></section>
         </article>
+        <button className="w-fit px-5 flex items-center py-2 my-3 rounded-md bg-gradient-to-tr from-cyan-600 to-blue-500">
+          <IoIosArrowBack className="mr-1" />
+          <Link href="/blogs">Back</Link>
+        </button>
       </div>
     </div>
   );
