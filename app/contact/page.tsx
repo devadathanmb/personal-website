@@ -49,18 +49,18 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="flex p-5 max-w-screen-lg mx-auto flex-col justify-center">
+      <div className="flex p-5 max-w-screen-lg mx-auto flex-col">
         <div className="pb-8">
           <h1 className="leading-loose text-4xl font-bold inline border-b-4 border-blue-300">
             Contact me
           </h1>
           <p className="py-5">Submit the form to get in touch with me</p>
         </div>
-        <div className="flex">
+        <div> 
           <form
             action="https://getform.io/f/590d4d02-0375-4a86-93f3-fe0d897fed18"
             method="POST"
-            className="flex flex-col w-full md:w-1/2"
+            className="flex flex-col w-full md:w-9/10"
           >
             <input
               type="text"
