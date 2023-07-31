@@ -13,7 +13,6 @@ interface Link {
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
-  console.log(pathname);
   const links: Link[] = [
     {
       id: 1,
