@@ -1,6 +1,6 @@
 "use client";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -11,6 +11,10 @@ interface Link {
 }
 
 export default function Navbar() {
+  const [domain, setDomain] = useState("devadathanmb");
+  useEffect(() => {
+    setDomain(window.location.hostname);
+  });
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
   const links: Link[] = [
@@ -44,7 +48,7 @@ export default function Navbar() {
     <div className="flex bg-black px-4 justify-between items-center w-full h-16 fixed">
       <div>
         <h1 className="text-2xl ml-2">
-          <Link href="/">devadathan.codes</Link>
+          <Link href="/">{domain}</Link>
         </h1>
       </div>
       <ul className="hidden md:flex">
