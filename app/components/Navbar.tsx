@@ -14,7 +14,7 @@ export default function Navbar() {
   const [domain, setDomain] = useState<string>("devadathanmb");
 
   useEffect(() => {
-    const hostname = window.location.hostname.replace("www", "");
+    const hostname = window.location.hostname.replace("www.", "");
     setDomain(hostname);
   });
 
