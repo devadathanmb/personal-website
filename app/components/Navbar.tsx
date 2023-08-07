@@ -11,10 +11,13 @@ interface Link {
 }
 
 export default function Navbar() {
-  const [domain, setDomain] = useState("devadathanmb");
+  const [domain, setDomain] = useState<string>("devadathanmb");
+
   useEffect(() => {
-    setDomain(window.location.hostname);
+    const hostname = window.location.hostname.replace("www", "");
+    setDomain(hostname);
   });
+
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
   const links: Link[] = [
