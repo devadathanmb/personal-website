@@ -37,7 +37,7 @@ const projects: Project[] = [
     id: 3,
     name: "Price Watcher",
     description:
-      "A simple self hosted telegram bot to watch price doprs of products in Flipkart",
+      "A simple self hosted telegram bot to watch price drops of products in Flipkart",
     tags: ["Python", "pyTelegramBotAPI"],
     githubLink: "https://github.com/devadathanmb/price-watcher",
     demoLink: "https://github.com/devadathanmb/price-watcher",
