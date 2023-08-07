@@ -12,11 +12,17 @@ interface Link {
 
 export default function Navbar() {
   const [domain, setDomain] = useState<string>("devadathanmb");
+  const [isDomainChanging, setIsDomainChanging] = useState(false);
 
   useEffect(() => {
     const hostname = window.location.hostname.replace("www.", "");
-    setDomain(hostname);
-  });
+
+    setIsDomainChanging(true);
+    setTimeout(() => {
+      setDomain(hostname);
+      setIsDomainChanging(false);
+    }, 500);
+  }, []);
 
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
@@ -50,7 +56,11 @@ export default function Navbar() {
   return (
     <div className="flex bg-black px-4 justify-between items-center w-full h-16 fixed">
       <div>
-        <h1 className="text-2xl ml-2">
+        <h1
+          className={`text-2xl ml-2 ${
+            isDomainChanging ? "fade-out" : "fade-in"
+          }`}
+        >
           <Link href="/">{domain}</Link>
         </h1>
       </div>
