@@ -7,7 +7,7 @@ import { VscTerminalTmux } from "react-icons/vsc";
 
 export default function About() {
   return (
-    <div className="thing flex pt-20 flex-col justify-center bg-gradient-to-t from-gray-950 via-gray-900 to-black">
+    <div className="thing flex pt-20 flex-col justify-center bg-gradient-to-b from-gray-950 to-black">
       <div className="max-w-screen-lg p-5 mx-auto">
         <div>
           <div className="pb-8">
