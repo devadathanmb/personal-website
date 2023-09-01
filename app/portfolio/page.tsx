@@ -2,7 +2,7 @@ import projects from "../data/projects";
 
 export default function Portfolio() {
   return (
-    <div className="pt-20 min-h-screen bg-gradient-to-b from-gray-800 to-black">
+    <div className="pt-20 min-h-screen bg-gradient-to-b from-gray-900 to-black">
       <div className="p-5 max-w-screen-lg mx-auto">
         <div className="pb-8">
           <h1 className="leading-loose text-4xl font-bold inline border-b-4 border-blue-300">
