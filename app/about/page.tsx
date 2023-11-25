@@ -18,9 +18,9 @@ export default function About() {
           <p>Well, good question!</p>
           <br />
           <p>
-            I&apos;m Devadathan M B. A passionate software developer and Linux a
-            enthusiast. Currently pursuing my B.Tech degree at RIT Kottayam,
-            Kerala, India.
+            I&apos;m Devadathan M B, a passionate software developer and Linux
+            enthusiast pursuing my B.Tech in Computer Science at RIT Kottayam,
+            Kerala, India. Currently in my final year.
           </p>
           <br />
           <p>
@@ -40,7 +40,7 @@ export default function About() {
         <div>
           <div className="pb-8">
             <h1 className="leading-loose text-4xl font-bold inline border-b-4 border-blue-300">
-              Tools I use
+              Stuff I use
             </h1>
           </div>
           <div>
